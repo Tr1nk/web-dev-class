@@ -1,0 +1,98 @@
+html:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment-1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <h1>Working with stakeholders of the web</h1>
+    <p>
+      A range of organizations join the World Wide Web Consortium as Members to work with us to drive the direction of core web technologies and exchange ideas with industry and research leaders. We rotate randomly a few of our Member organizations' logos underneath.
+    </p>
+    <p>
+      The Web Consortium and its members, with help from the public and the web community, focus on a range of business ecosystems that the web transforms, including 
+      <a href="#">E-commerce</a>, 
+      <a href="#">Media & Entertainment</a>, 
+      <a href="#">Publishing</a> 
+      and several other areas.
+    </p>
+
+
+
+   <div class="logos">
+  <img src="images/raw.webp" alt="INDIA">
+  <img src="images/isi.png" alt="PAKISTAN">
+  <img src="images/hamas.svg" alt="PALESTINE">
+  <img src="images/russia.png" alt="RUSSIA">
+  <img src="images/nazi.svg" alt="Heil Hitler">
+  <img src="images/n.png" alt="ISRAEL">
+  <img src="images/cia.png" alt="USA">
+</div>
+
+    <button>Discover how W3C supports these organizations</button>
+  </section>
+</body>
+</html>
+
+css: 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 40px;
+}
+
+section {
+  max-width: 800px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.logos {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.logos img {
+  width: 120px;
+  height: 60px;
+  object-fit: contain;
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  background: #fafafa;
+}
+
+
+
+button {
+  background-color: #005a9c;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #004080;
+}
