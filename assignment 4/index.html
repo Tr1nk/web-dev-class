@@ -1,45 +1,18 @@
-// Get the current date
-const currentDate = new Date();
-
-// Get the day of the week (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
-const dayIndex = currentDate.getDay();
-
-// Variable to store the day name
-let dayName;
-
-// Using switch statement to determine the day name
-switch (dayIndex) {
-    case 0:
-        dayName = "Sunday";
-        break;
-    case 1:
-        dayName = "Monday";
-        break;
-    case 2:
-        dayName = "Tuesday";
-        break;
-    case 3:
-        dayName = "Wednesday";
-        break;
-    case 4:
-        dayName = "Thursday";
-        break;
-    case 5:
-        dayName = "Friday";
-        break;
-    case 6:
-        dayName = "Saturday";
-        break;
-    default:
-        dayName = "Unknown";
-}
-
-// Format the date (optional)
-const formattedDate = currentDate.toLocaleDateString();
-
-// Display alert message
-alert(`Today is ${dayName}`);
-
-// Optional: Log to console with more details
-console.log(`Date: ${formattedDate}`);
-console.log(`Day: ${dayName}`);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Today's Date</title>
+</head>
+<body>
+    <div class="div display-date">
+        <h1>Hey what's up !<br>Welcome to the assignment</h1>
+        <label for="date">Select Date:</label>
+            <input type="date" name="date" id="date"><br><br>
+            <button type="submit" id="display-date">Submit</button>
+    </div>
+    
+<script src="./script.js"></script>
+</body>
+</html>
